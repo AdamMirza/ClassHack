@@ -1,0 +1,4 @@
+CSE::373::Algorithms and Data Structures
+CSE::154::Web Programming
+CSE::142::Intro to Java
+CSE::143::Advanced Java

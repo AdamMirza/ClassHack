@@ -1,0 +1,9 @@
+{
+	"classes":	[
+		{"dept":"CSE", "course":"143","title":"CSE 143 Computer Programming II (5) NW, QSR"},
+		{"dept":"CSE", "course":"142","title":"CSE 142 Computer Programming I (4) NW, QSR"},
+		{"dept":"MATH", "course":"125","title":"Calculus with Analytic Geometry II (5) NW"},
+		{"dept":"MATH", "course":"126","title":"Calculus with Analytic Geometry III (5) NW"},
+		{"dept":"MATH", "course":"124","title":"Calculus with Analytic Geometry I (5) NW, QSR"s}
+	]
+}
