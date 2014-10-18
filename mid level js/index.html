@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// $.getJSON("sample.json", function(json) {
+   //      		console.log("object:" + json);
+   //      		console.log("text:" + json.responseText);
+   //      		$("#test").html(json);
+   //      		$("#test").html(json.responseText);
+   //          });
+	        $.getJSON("sample.json", function(response) {
+        		$.each(response) {
+        			function() {
+       					for (var i = 0; i < classes.length; i++) {
+        					$("ul").append("<li>" + response.classes[i].course + "</li>");
+        					$("ul").append("<li>" + response.classes[i].title + "</li>"); 
+        				}
+        			}
+  	     		});
+			});
+
+			// $.ajax("service.php", {
+			// 	success: insert,
+			// 	error: showError
+			// });
+
+			function insert(response) {
+				var result = JSON.parse(response);
+				console.log(result);
+				console.log(result.CSE);
+				$("#test").html(result.CSE);
+			}
+
+			function showError() {
+
+			}
+		});
+	</script>
+
+	</head>
+	<body>
+		<ul></ul>
+	</body>
+</html>
