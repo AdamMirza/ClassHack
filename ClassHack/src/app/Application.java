@@ -84,6 +84,7 @@ public class Application {
 		}
 		
 		System.out.println(departmentObjects);*/
+		JSONObject root = new JSONObject();
 		JSONArray overallList = new JSONArray();
 		for (String key : data.keySet())
 		{
@@ -100,9 +101,11 @@ public class Application {
 			dept.put(key, list);
 			overallList.put(dept);
 		}
+		
+		root.put("root", overallList);
 		try {
 			PrintWriter writer = new PrintWriter("/Users/adammirza/Desktop/text.json", "UTF-8");
-			writer.println(overallList.toString());
+			writer.println(root.toString());
 			writer.close();
 	 
 		} catch (IOException e) {
